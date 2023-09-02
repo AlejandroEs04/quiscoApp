@@ -9,10 +9,11 @@
     "lint": "next lint"
   },
   "prisma": {
-    "seed" : "ts-node prisma/seed.ts"
+    "seed": "ts-node prisma/seed.ts"
   },
   "dependencies": {
     "@prisma/client": "^5.1.1",
+    "axios": "^1.5.0",
     "eslint": "8.47.0",
     "eslint-config-next": "13.4.18",
     "next": "13.4.18",
@@ -21,6 +22,7 @@
     "ts-node": "^10.9.1"
   },
   "devDependencies": {
+    "@types/react": "18.2.21",
     "autoprefixer": "^10.4.15",
     "postcss": "^8.4.28",
     "prisma": "^5.1.1",
