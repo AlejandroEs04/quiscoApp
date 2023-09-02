@@ -1,5 +1,5 @@
 'use client'
-import QuioscoContext from "@/context/QuioscoProvider";
+import QuioscoContext from '../context/QuioscoProvider'
 import { useContext } from "react";
 
 const useQuiosco = () => {

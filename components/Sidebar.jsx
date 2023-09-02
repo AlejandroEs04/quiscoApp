@@ -1,5 +1,5 @@
 'use client'
-import useQuiosco from "@/hooks/useQuiosco"
+import useQuiosco from "../hooks/useQuiosco"
 import Image from "next/image"
 import Categoria from "./Categoria"
 

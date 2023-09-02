@@ -1,8 +1,8 @@
-import Sidebar from '@/components/Sidebar'
+import Sidebar from '../components/Sidebar'
 import '../styles//globals.css'
 import { Inter } from 'next/font/google'
-import { QuioscoProvider } from '@/context/QuioscoProvider'
-
+import { QuioscoProvider } from '../context/QuioscoProvider'
+import ModalContainer from '../components/ModalContainer'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -13,8 +13,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <QuioscoProvider>
+      <QuioscoProvider>
+        <body className={inter.className}> 
           <div className='md:flex'>
             <aside className='md:w-4/12 xl:1/4 2xl:w-1/5'>
               <Sidebar />
@@ -27,8 +27,11 @@ export default function RootLayout({ children }) {
               
             </main>
           </div>
-        </QuioscoProvider>
-      </body>
+        </body>
+
+        <ModalContainer />
+        
+      </QuioscoProvider>
     </html>
   )
 }
