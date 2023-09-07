@@ -1,5 +1,5 @@
 'use client'
-import Modal from "react-modal"
+import Modal from 'react-modal'
 import useQuiosco from "../hooks/useQuiosco"
 import ModalProducto from '../components/ModalProducto'
 
@@ -13,6 +13,8 @@ const customStyles = {
     transform: 'translate(-50%, -50%)',
   },
 };
+
+Modal.setAppElement('#root')
 
 const ModalContainer = () => {
 

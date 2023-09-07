@@ -14,7 +14,7 @@ export default function Home() {
       <div className='grid gap-4 grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4'>
         {categoriaActual?.productos?.map(producto => (
           <Producto 
-            key={producto.key}
+            key={producto.id}
             producto={producto}
           />
         ))}
